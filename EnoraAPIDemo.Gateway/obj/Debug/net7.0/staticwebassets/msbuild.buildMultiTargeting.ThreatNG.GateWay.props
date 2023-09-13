@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ThreatNG.GateWay.props" />
+</Project>

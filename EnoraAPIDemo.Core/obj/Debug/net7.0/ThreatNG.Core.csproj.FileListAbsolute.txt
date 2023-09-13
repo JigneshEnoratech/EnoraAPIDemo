@@ -1,0 +1,12 @@
+C:\Projects\ThreatNGAPI\ThreatNG.Core\bin\Debug\net7.0\ThreatNG.Core.deps.json
+C:\Projects\ThreatNGAPI\ThreatNG.Core\bin\Debug\net7.0\ThreatNG.Core.dll
+C:\Projects\ThreatNGAPI\ThreatNG.Core\bin\Debug\net7.0\ThreatNG.Core.pdb
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ThreatNG.Core.csproj.AssemblyReference.cache
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ThreatNG.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ThreatNG.Core.AssemblyInfoInputs.cache
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ThreatNG.Core.AssemblyInfo.cs
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ThreatNG.Core.csproj.CoreCompileInputs.cache
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ThreatNG.Core.dll
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\refint\ThreatNG.Core.dll
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ThreatNG.Core.pdb
+C:\Projects\ThreatNGAPI\ThreatNG.Core\obj\Debug\net7.0\ref\ThreatNG.Core.dll

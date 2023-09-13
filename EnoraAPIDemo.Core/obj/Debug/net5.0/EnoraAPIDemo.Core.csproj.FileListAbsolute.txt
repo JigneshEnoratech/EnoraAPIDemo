@@ -1,0 +1,12 @@
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\bin\Debug\net5.0\EnoraAPIDemo.Core.deps.json
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\bin\Debug\net5.0\EnoraAPIDemo.Core.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\bin\Debug\net5.0\EnoraAPIDemo.Core.pdb
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\EnoraAPIDemo.Core.csproj.AssemblyReference.cache
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\EnoraAPIDemo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\EnoraAPIDemo.Core.AssemblyInfoInputs.cache
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\EnoraAPIDemo.Core.AssemblyInfo.cs
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\EnoraAPIDemo.Core.csproj.CoreCompileInputs.cache
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\EnoraAPIDemo.Core.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\refint\EnoraAPIDemo.Core.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\EnoraAPIDemo.Core.pdb
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Core\obj\Debug\net5.0\ref\EnoraAPIDemo.Core.dll

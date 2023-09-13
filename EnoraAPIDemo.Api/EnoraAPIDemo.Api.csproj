@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <UserSecretsId>d792ca93-c88c-4967-9d72-0a67adaac401</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="FluentValidation" Version="9.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="YamlDotNet" Version="11.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EnoraAPIDemo.Core\EnoraAPIDemo.Core.csproj" />
+    <ProjectReference Include="..\EnoraAPIDemo.Data\EnoraAPIDemo.Data.csproj" />
+    <ProjectReference Include="..\EnoraAPIDemo.Services\EnoraAPIDemo.Services.csproj" />
+    <ProjectReference Include="..\EnoraAPIDemo.Utility\EnoraAPIDemo.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

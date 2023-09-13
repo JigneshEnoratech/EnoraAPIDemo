@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EEYNos6cMrJ49dGwq8Yu3pIvo/+f7/9/EwBooJFts9o=",
+  "Source": "ThreatNG.Api",
+  "BasePath": "_content/ThreatNG.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

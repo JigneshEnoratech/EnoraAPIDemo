@@ -1,0 +1,17 @@
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\bin\Debug\net5.0\EnoraAPIDemo.Services.deps.json
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\bin\Debug\net5.0\EnoraAPIDemo.Services.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\bin\Debug\net5.0\EnoraAPIDemo.Services.pdb
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\bin\Debug\net5.0\EnoraAPIDemo.Core.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\bin\Debug\net5.0\EnoraAPIDemo.Utility.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\bin\Debug\net5.0\EnoraAPIDemo.Core.pdb
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\bin\Debug\net5.0\EnoraAPIDemo.Utility.pdb
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.csproj.AssemblyReference.cache
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.AssemblyInfoInputs.cache
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.AssemblyInfo.cs
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.csproj.CoreCompileInputs.cache
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.csproj.CopyComplete
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\refint\EnoraAPIDemo.Services.dll
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\EnoraAPIDemo.Services.pdb
+C:\Projects\ThreatNGAPI\EnoraAPIDemo.Services\obj\Debug\net5.0\ref\EnoraAPIDemo.Services.dll
