@@ -1,7 +1,89 @@
- CREATE DATABASE EnoraAPIDemo;
+USE [master]
+GO
+/****** Object:  Database [EnoraAPIDemo]    Script Date: 9/13/2023 11:08:17 ******/
+CREATE DATABASE [EnoraAPIDemo]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'EnoraAPIDemo', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\EnoraAPIDemo.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'EnoraAPIDemo_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\EnoraAPIDemo_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+GO
+ALTER DATABASE [EnoraAPIDemo] SET COMPATIBILITY_LEVEL = 150
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [EnoraAPIDemo].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [EnoraAPIDemo] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET AUTO_CLOSE ON 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET  ENABLE_BROKER 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET  MULTI_USER 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [EnoraAPIDemo] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [EnoraAPIDemo] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+ALTER DATABASE [EnoraAPIDemo] SET QUERY_STORE = OFF
+GO
 USE [EnoraAPIDemo]
 GO
-/****** Object:  Table [dbo].[AccountLicense]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  User [dev]    Script Date: 9/13/2023 11:08:17 ******/
+CREATE USER [dev] FOR LOGIN [dev] WITH DEFAULT_SCHEMA=[dbo]
+GO
+/****** Object:  Table [dbo].[AccountLicense]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -29,7 +111,7 @@ CREATE TABLE [dbo].[AccountLicense](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AccountType]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[AccountType]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -44,7 +126,7 @@ CREATE TABLE [dbo].[AccountType](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ApplicationPermission]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[ApplicationPermission]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -61,7 +143,7 @@ CREATE TABLE [dbo].[ApplicationPermission](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ClientAccount]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[ClientAccount]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -84,33 +166,29 @@ CREATE TABLE [dbo].[ClientAccount](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CorrelationAnswer]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[ItemMaster]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[CorrelationAnswer](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[QuestionsMasterId] [int] NOT NULL,
-	[JobId] [int] NOT NULL,
-	[SchedulerScanDetailsId] [int] NOT NULL,
-	[AssetId] [int] NOT NULL,
-	[ViewId] [int] NOT NULL,
-	[Answer] [int] NOT NULL,
-	[Comment] [nvarchar](max) NULL,
-	[IsEnable] [bit] NULL,
-	[CreatedBy] [int] NOT NULL,
-	[CreatedOn] [datetime] NOT NULL,
-	[UpdatedBy] [int] NULL,
-	[UpdatedOn] [datetime] NULL,
+CREATE TABLE [dbo].[ItemMaster](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[ItemName] [varchar](50) NULL,
 	[IsActive] [bit] NOT NULL,
- CONSTRAINT [PK_CorrelationAnswer] PRIMARY KEY CLUSTERED 
+	[IsDelete] [bit] NOT NULL,
+	[CreatedBy] [int] NOT NULL,
+	[CreatedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NULL,
+	[UpdatedDate] [datetime] NULL,
+	[DeletedBy] [int] NULL,
+	[DeletedDate] [datetime] NULL,
+ CONSTRAINT [PK_ItemMaster] PRIMARY KEY CLUSTERED 
 (
-	[Id] ASC
+	[ID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Permission]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[Permission]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -130,7 +208,7 @@ CREATE TABLE [dbo].[Permission](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Role]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[Role]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -150,7 +228,7 @@ CREATE TABLE [dbo].[Role](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RolePermission]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[RolePermission]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -166,7 +244,7 @@ CREATE TABLE [dbo].[RolePermission](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[StartupConfig]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[StartupConfig]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -181,7 +259,7 @@ CREATE TABLE [dbo].[StartupConfig](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[User]    Script Date: 9/6/2023 17:07:43 ******/
+/****** Object:  Table [dbo].[User]    Script Date: 9/13/2023 11:08:17 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -430,6 +508,22 @@ GO
 INSERT [dbo].[ClientAccount] ([id], [CompanyName], [CompanyDescription], [AccountTypeId], [IsDeleted], [CreatedBy], [CreatedOn], [UpdatedBy], [UpdatedOn], [IsActive], [IsAccountActive]) VALUES (1, N'Enora Tech Demo', N'Enora Tech Demo', 1, 0, 1, CAST(N'2020-05-04T00:00:00.000' AS DateTime), NULL, NULL, 1, 1)
 GO
 SET IDENTITY_INSERT [dbo].[ClientAccount] OFF
+GO
+SET IDENTITY_INSERT [dbo].[ItemMaster] ON 
+GO
+INSERT [dbo].[ItemMaster] ([ID], [ItemName], [IsActive], [IsDelete], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [DeletedBy], [DeletedDate]) VALUES (3, N'Item 1', 1, 1, 1, CAST(N'2023-09-11T08:33:02.323' AS DateTime), NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[ItemMaster] ([ID], [ItemName], [IsActive], [IsDelete], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [DeletedBy], [DeletedDate]) VALUES (4, N'Item 2', 1, 1, 1, CAST(N'2023-09-11T08:44:33.570' AS DateTime), NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[ItemMaster] ([ID], [ItemName], [IsActive], [IsDelete], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [DeletedBy], [DeletedDate]) VALUES (5, N'Item 3', 1, 0, 1, CAST(N'2023-09-11T09:48:10.363' AS DateTime), NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[ItemMaster] ([ID], [ItemName], [IsActive], [IsDelete], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [DeletedBy], [DeletedDate]) VALUES (6, N'Item 4', 1, 0, 0, CAST(N'2023-09-11T10:08:05.823' AS DateTime), NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[ItemMaster] ([ID], [ItemName], [IsActive], [IsDelete], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [DeletedBy], [DeletedDate]) VALUES (7, N'Item 5', 1, 0, 0, CAST(N'2023-09-11T10:11:57.723' AS DateTime), NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[ItemMaster] ([ID], [ItemName], [IsActive], [IsDelete], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [DeletedBy], [DeletedDate]) VALUES (8, N'Item 6', 1, 0, 0, CAST(N'2023-09-11T10:21:52.613' AS DateTime), NULL, NULL, NULL, NULL)
+GO
+SET IDENTITY_INSERT [dbo].[ItemMaster] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Permission] ON 
 GO
@@ -1000,4 +1094,46 @@ ALTER TABLE [dbo].[RolePermission]  WITH CHECK ADD  CONSTRAINT [FK_RolePermissio
 REFERENCES [dbo].[Role] ([Id])
 GO
 ALTER TABLE [dbo].[RolePermission] CHECK CONSTRAINT [FK_RolePermission_Role]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_GetItemList]    Script Date: 9/13/2023 11:08:17 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  PROCEDURE [dbo].[sp_GetItemList] @start int,@length int,@searchValue nvarchar(200) = NULL ,@totalCount int out
+AS   
+
+    SET NOCOUNT ON;  
+	
+
+	IF (@searchValue Is Null OR @searchValue='')
+	SET @searchValue='%' 
+	ELSE 
+	SET @searchValue='%' + @searchValue +'%'
+SELECT * INTO #SelectItemData
+	  FROM (SELECT A.[ID]
+      ,ItemName
+	  ,IsActive
+	  ,IsDelete
+      ,CreatedDate
+	  ,CreatedBy
+  FROM [dbo].[ItemMaster] AS A  
+ 
+  Where A.IsDelete=0 and A.isactive=1) as EntityData
+	
+	IF @searchValue!='%'
+					BEGIN
+								SELECT * FROM  #SelectItemData WHERE #SelectItemData.ItemName LIKE @searchValue  ORDER BY #SelectItemData.ItemName ASC   OFFSET @start ROWS FETCH NEXT @length ROWS ONLY;
+								set @totalCount=(SELECT COUNT(*) FROM  #SelectItemData WHERE #SelectItemData.ItemName LIKE @searchValue );
+					END
+					ELSE
+					BEGIN 
+								SELECT * FROM  #SelectItemData ORDER BY #SelectItemData.ItemName ASC OFFSET @start ROWS FETCH NEXT @length ROWS ONLY;
+								set @totalCount=(SELECT COUNT(*) FROM  #SelectItemData);
+					END
+	drop table #SelectItemData
+GO
+USE [master]
+GO
+ALTER DATABASE [EnoraAPIDemo] SET  READ_WRITE 
 GO
