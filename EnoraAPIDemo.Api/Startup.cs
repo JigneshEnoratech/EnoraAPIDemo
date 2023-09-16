@@ -15,6 +15,7 @@ using EnoraAPIDemo.Core.Services;
 using EnoraAPIDemo.Data;
 using EnoraAPIDemo.Services;
 using EnoraAPIDemo.Utility;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace EnoraAPIDemo.Api
 {
@@ -35,6 +36,33 @@ namespace EnoraAPIDemo.Api
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EnoraAPIDemo.Api", Version = "v1" });
+            });
+            services.AddSwaggerGen(setup =>
+            {
+                // Include 'SecurityScheme' to use JWT Authentication
+                var jwtSecurityScheme = new OpenApiSecurityScheme
+                {
+                    BearerFormat = "JWT",
+                    Name = "JWT Authentication",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = JwtBearerDefaults.AuthenticationScheme,
+                    Description = "Put **_ONLY_** your JWT Bearer token on textbox below!",
+
+                    Reference = new OpenApiReference
+                    {
+                        Id = JwtBearerDefaults.AuthenticationScheme,
+                        Type = ReferenceType.SecurityScheme
+                    }
+                };
+
+                setup.AddSecurityDefinition(jwtSecurityScheme.Reference.Id, jwtSecurityScheme);
+
+                setup.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { jwtSecurityScheme, Array.Empty<string>() }
+    });
+
             });
             services.AddHttpClient();
 
@@ -74,20 +102,14 @@ namespace EnoraAPIDemo.Api
             services.AddScoped<IPermissionService, PermissionService>();
             services.AddScoped<IItemMasterService, ItemMasterService>();
 
-
-
-
             services.AddScoped<ITermsAndConditionService, TermsAndConditionService>();
-
-
-
-
-
             services.AddAutoMapper(typeof(Startup));
 
             services.AddDbContext<EnoraAPIDemoAPIContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("EnoraAPIDemoConnection"),
                 x => x.MigrationsAssembly("EnoraAPIDemo.Data")));
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

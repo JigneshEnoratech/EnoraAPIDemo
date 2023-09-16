@@ -352,11 +352,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
+      "projectUniqueName": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
       "projectName": "EnoraAPIDemo.Core",
-      "projectPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
+      "projectPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\obj\\",
+      "outputPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

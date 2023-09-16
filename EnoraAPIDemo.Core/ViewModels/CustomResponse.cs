@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace EnoraAPIDemo.Core.ViewModels
 {
-    public class CustomResponse
+    public class CustomResponse<T>
     {
         public string Message { get; set; }
-        public string Status { get; set; }
+        public bool Status { get; set; }
+        public T data { get; set; }
     }
 }

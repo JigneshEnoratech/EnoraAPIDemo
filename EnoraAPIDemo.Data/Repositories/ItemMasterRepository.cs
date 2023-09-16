@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnoraAPIDemo.Core;
 using EnoraAPIDemo.Core.Models;
 using EnoraAPIDemo.Core.Repositories;
 using EnoraAPIDemo.Core.ViewModels;
@@ -23,7 +24,7 @@ namespace EnoraAPIDemo.Data.Repositories
             : base(context)
         { }
 
-        public async Task<ItemMaster> UpdateItem(ItemMasterModel model)
+        public async Task<ItemMaster> UpdateItem(ItemMaster model)
         {
             var ItemMaster = await _DbContext.ItemMaster.Where(x => x.ID == model.ID).FirstOrDefaultAsync();
             if (ItemMaster != null)
@@ -43,7 +44,7 @@ namespace EnoraAPIDemo.Data.Repositories
                  .Where(c =>c.ID == id && c.IsDelete == false)
                 .SingleOrDefaultAsync(m => m.ID == id);
         }
-
+       
         public async Task<PaginatedItemResult> ShowItemList(Page page)
         {
             List<ItemMasterModel> resultSubDomains = new List<ItemMasterModel>();
@@ -95,5 +96,7 @@ namespace EnoraAPIDemo.Data.Repositories
             };
             return scanResult;
         }
+
+        
     }
 }

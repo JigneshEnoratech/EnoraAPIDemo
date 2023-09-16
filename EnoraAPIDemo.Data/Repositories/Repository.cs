@@ -105,7 +105,7 @@ namespace EnoraAPIDemo.Data.Repositories
         {
             return Context.Set<TEntity>().FirstOrDefaultAsync(predicate);
         }
-
+       
         #region :: SP Methods ::
         public IEnumerable<T> GetList<T>(CommandType commandType, string sql, List<ParametersCollection> parameters = null)
         {

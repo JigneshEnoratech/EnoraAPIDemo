@@ -10,9 +10,10 @@ namespace EnoraAPIDemo.Core.Services
 {
     public interface IItemMasterService
     {
-        Task<ItemMaster> CreateItem(ItemMaster itemMaster);
-        Task<ItemMaster> UpdateItem(ItemMasterModel itemMaster);
+        Task<ItemResource> CreateItem(ItemResource itemMaster);
+        Task<ItemUpdateResource> UpdateItem(ItemUpdateResource itemMaster);
         Task<ItemMaster> GetItemById(int id);
         Task<PaginatedItemResult> ShowItemList(Page page);
+        Task<PaginatedItemResult> ShowResult(Page page);
     }
 }

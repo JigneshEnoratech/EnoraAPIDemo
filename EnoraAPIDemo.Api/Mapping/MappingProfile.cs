@@ -17,6 +17,9 @@ namespace EnoraAPIDemo.Api.Mapping
             CreateMap<ItemMasterModel, ItemMaster>();
             CreateMap<ItemMaster, ItemResource>();
             CreateMap<ItemResource, ItemMaster>();
+            CreateMap<ItemMaster, ItemUpdateResource>();
+            CreateMap<ItemUpdateResource, ItemMaster>();
+
         }
     }
 }

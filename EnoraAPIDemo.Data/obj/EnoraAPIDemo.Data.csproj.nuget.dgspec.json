@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj": {}
+    "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj": {
+    "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
+        "projectUniqueName": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
         "projectName": "EnoraAPIDemo.Core",
-        "projectPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
+        "projectPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\obj\\",
+        "outputPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj": {
+    "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj",
+        "projectUniqueName": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj",
         "projectName": "EnoraAPIDemo.Data",
-        "projectPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj",
+        "projectPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Data\\EnoraAPIDemo.Data.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Data\\obj\\",
+        "outputPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -117,11 +117,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj": {
-                "projectPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj"
+              "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj": {
+                "projectPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj"
               },
-              "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj": {
-                "projectPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj"
+              "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj": {
+                "projectPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj"
               }
             }
           }
@@ -175,14 +175,14 @@
         }
       }
     },
-    "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj": {
+    "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj",
+        "projectUniqueName": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj",
         "projectName": "EnoraAPIDemo.Utility",
-        "projectPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj",
+        "projectPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\EnoraAPIDemo.Utility.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\obj\\",
+        "outputPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -204,8 +204,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj": {
-                "projectPath": "C:\\Projects\\DemoGithub\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj"
+              "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj": {
+                "projectPath": "C:\\Projects\\DemoGithub\\FinalSource\\EnoraAPIDemo\\EnoraAPIDemo.Core\\EnoraAPIDemo.Core.csproj"
               }
             }
           }
